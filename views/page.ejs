@@ -17,9 +17,9 @@
         <%= post.date %>
     </p>
 
-    <a href="/edit/:id">Edit</a>
+    <a href="/edit/<%= index %>">Edit</a>
     
-    <form action="/<%= post.id %>?_method=DELETE" method="POST" style="display:inline;">
+    <form action="/<%= index %>?_method=DELETE" method="POST" style="display:inline;">
         <button type="submit">Delete</button>
     </form>
 
